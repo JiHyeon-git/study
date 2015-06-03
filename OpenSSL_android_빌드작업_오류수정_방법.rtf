@@ -1,0 +1,322 @@
+{\rtf1\ansi\ansicpg949\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25380\viewh18220\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 2) ./Configure linux-generic32 no-idea no-cast no-seed no-md2 no-jpake -DL_ENDIAN 
+\f1 \'bd\'c7\'c7\'e0 \'b0\'e1\'b0\'fa
+\f0 \
+\
+    no-camellia     [default]  OPENSSL_NO_CAMELLIA (skip dir)\
+    no-capieng      [default]  OPENSSL_NO_CAPIENG (skip dir)\
+    no-cast         [option]   OPENSSL_NO_CAST (skip dir)\
+    no-cms          [default]  OPENSSL_NO_CMS (skip dir)\
+    no-gmp          [default]  OPENSSL_NO_GMP (skip dir)\
+    no-idea         [option]   OPENSSL_NO_IDEA (skip dir)\
+    no-jpake        [experimental] OPENSSL_NO_JPAKE (skip dir)\
+    no-krb5         [krb5-flavor not specified] OPENSSL_NO_KRB5\
+    no-md2          [option]   OPENSSL_NO_MD2 (skip dir)\
+    no-mdc2         [default]  OPENSSL_NO_MDC2 (skip dir)\
+    no-montasm      [default] \
+    no-rc5          [default]  OPENSSL_NO_RC5 (skip dir)\
+    no-rfc3779      [default]  OPENSSL_NO_RFC3779 (skip dir)\
+    no-seed         [option]   OPENSSL_NO_SEED (skip dir)\
+    no-shared       [default] \
+    no-zlib         [default] \
+    no-zlib-dynamic [default]\
+\
+CFLAG =-DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -DL_ENDIAN -DTERMIO -O3 -fomit-frame-pointer -Wall\
+\
+\
+\
+\
+7) 
+\f1 \'b4\'d9\'b8\'a5 \'c4\'c4\'c6\'c4\'c0\'cf \'b4\'eb\'bb\'f3 \'c6\'c4\'c0\'cf \'c1\'a4\'b8\'ae\
+\
+apps =========================\
+ \
+\'be\'f8\'c0\'bd\
+\
+crypto =========================\
+\
+
+\f0 * crypto/jpake 
+\f1 \'bb\'e8\'c1\'a6\'c7\'d4\
+\
+\'c3\'df\'b0\'a1\
+bn/bn_opt.c \\\
+bn/bn_x931p.c \\\
+buffer/buf_str.c \\\
+des/des_lib.c \\\
+dsa/dsa_utl.c \\\
+dyn_lck.c \\\
+err/err_bio.c \\\
+err/err_def.c \\\
+err/err_str.c \\\
+evp/dig_eng.c \\\
+evp/enc_min.c \\\
+evp/evp_cnf.c \\\
+fips_err.c \\\
+o_init.c \\\
+rand/rand_eng.c \\\
+rc4/rc4_fblk.c \\\
+rsa/rsa_eng.c \\\
+rsa/rsa_x931g.c \\\
+\
+* \'bf\'c0\'b7\'f9\'b3\'aa\'bc\'ad \'c3\'df\'b0\'a1\
+ec/ec_asn1.c \\\
+ec/ec_check.c \\\
+ec/ec_curve.c \\\
+ec/ec_cvt.c \\\
+ec/ec_err.c \\\
+ec/ec_key.c \\\
+ec/ec_lib.c \\\
+ec/ec_mult.c \\\
+ec/ec_print.c \\\
+ec/ec2_mult.c \\\
+ec/ec2_smpl.c \\\
+ec/ecp_mont.c \\\
+ec/ecp_nist.c \\\
+ec/ecp_smpl.c \\\
+* ec/ec2_smpt.c \\ // \'bf\'a1\'b7\'af\'b3\'aa\'bc\'ad \'c1\'a6\'bf\'dc\
+evp/m_ecdsa.c \\\
+ecdh/ech_key.c \\\
+ecdh/ech_err.c \\\
+ecdh/ech_lib.c \\\
+ecdh/ech_ossl.c \\\
+engine/tb_ecdh.c \\\
+
+\f0 ecdsa/ecs_asn1.c \\\
+ecdsa/ecs_err.c \\\
+ecdsa/ecs_lib.c \\\
+ecdsa/ecs_ossl.c \\\
+ecdsa/ecs_sign.c \\\
+ecdsa/ecs_vrf.c \\
+\f1 \
+
+\f0 pqueue/pqueue.c \\\
+ocsp/ocsp_asn.c \\\
+ocsp/ocsp_cl.c \\\
+ocsp/ocsp_err.c \\\
+ocsp/ocsp_ext.c \\\
+ocsp/ocsp_ht.c \\\
+ocsp/ocsp_lib.c \\\
+ocsp/ocsp_prn.c \\\
+ocsp/ocsp_srv.c \\\
+ocsp/ocsp_vfy.c \\
+\f1 \
+
+\f0 x509v3/v3_ocsp.c \\
+\f1 \
+\
+\'c1\'a6\'b0\'c5\
+pkcs7/bio_ber.c\
+pkcs7/dec.c\
+pkcs7/enc.c\
+pkcs7/example.c\
+pkcs7/sign.c\
+pkcs7/verify.c\
+pkcs7/p7 \'c0\'cc\'c7\'cf \'b8\'f0\'b5\'ce\
+pkcs7/t \'c0\'cc\'c7\'cf \'b8\'f0\'b5\'ce\
+\
+\
+\
+ssl =========================\
+\
+\'c3\'df\'b0\'a1\
+s3_cbc.c \\\
+t1_reneg.c \\\
+\
+* \'bf\'c0\'b7\'f9\'b3\'aa\'bc\'ad \'c3\'df\'b0\'a1\
+
+\f0 d1_both.c \\\
+d1_clnt.c \\\
+d1_enc.c \\\
+d1_lib.c \\\
+d1_meth.c \\\
+d1_pkt.c \\\
+d1_srvr.c \\\
+\
+\
+
+\f1 \
+\
+\'c1\'a6\'b0\'c5\
+\
+\
+\
+\
+8) \'c4\'c4\'c6\'c4\'c0\'cf \'c7\'df\'c0\'bb \'b6\'a7 -D
+\f0 OPENSSL_NO_CAPIENG 
+\f1 \'bf\'c9\'bc\'c7\'c0\'ba \'be\'f8\'b4\'d9\'b0\'ed \'b3\'aa\'bf\'c8\'a1\'a6
+\f0  
+\f1 \'b9\'b9\'c1\'f6?\
+\
+\
+9) \'b8\'b5\'c5\'a9 \'bf\'a1\'b7\'af\'a4\'d0\'a4\'d0\
+\
+\'c4\'c4\'c6\'c4\'c0\'cf \'b4\'fa\'c7\'d8\'bc\'ad \'b1\'d7\'b7\'b1 \'b0\'cd!!!! \'c7\'d8\'b4\'e7 \'c7\'d4\'bc\'f6\'b0\'a1 \'c1\'a4\'c0\'c7\'b5\'c8 \'c6\'c4\'c0\'cf\'c0\'bb \'c4\'c4\'c6\'c4\'c0\'cf \'b8\'f1\'b7\'cf\'bf\'a1 \'c3\'df\'b0\'a1\'c7\'d8\'be\'df \'c7\'d1\'b4\'d9.\
+\
+
+\f0 /Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:737: error: undefined reference to 'EC_KEY_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1397: error: undefined reference to 'EC_KEY_dup'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1403: error: undefined reference to 'EC_KEY_get0_public_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1406: error: undefined reference to 'EC_KEY_generate_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1404: error: undefined reference to 'EC_KEY_get0_private_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1413: error: undefined reference to 'EC_KEY_get0_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1414: error: undefined reference to 'EC_KEY_get0_public_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1415: error: undefined reference to 'EC_KEY_get0_private_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1421: error: undefined reference to 'EC_GROUP_get_degree'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1432: error: undefined reference to 'EC_GROUP_get_curve_name'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1443: error: undefined reference to 'EC_KEY_get0_public_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1443: error: undefined reference to 'EC_POINT_point2oct'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1457: error: undefined reference to 'EC_KEY_get0_public_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1457: error: undefined reference to 'EC_POINT_point2oct'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:1602: error: undefined reference to 'EVP_ecdsa'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2145: error: undefined reference to 'EC_KEY_new'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2162: error: undefined reference to 'EC_KEY_get0_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2163: error: undefined reference to 'EC_KEY_get0_private_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2165: error: undefined reference to 'EC_KEY_set_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2166: error: undefined reference to 'EC_KEY_set_private_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2172: error: undefined reference to 'EC_POINT_new'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2202: error: undefined reference to 'EC_POINT_copy'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2227: error: undefined reference to 'EC_POINT_oct2point'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2239: error: undefined reference to 'EC_GROUP_get_degree'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2244: error: undefined reference to 'ECDH_compute_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2252: error: undefined reference to 'EC_POINT_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2254: error: undefined reference to 'EC_KEY_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2282: error: undefined reference to 'EC_POINT_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2284: error: undefined reference to 'EC_KEY_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_srvr.c:2394: error: undefined reference to 'ECDSA_verify'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1139: error: undefined reference to 'EC_KEY_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1318: error: undefined reference to 'EC_KEY_new'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1348: error: undefined reference to 'EC_GROUP_new_by_curve_name'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1353: error: undefined reference to 'EC_KEY_set_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1357: error: undefined reference to 'EC_GROUP_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1359: error: undefined reference to 'EC_KEY_get0_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1362: error: undefined reference to 'EC_GROUP_get_degree'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1372: error: undefined reference to 'EC_POINT_new'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1382: error: undefined reference to 'EC_POINT_oct2point'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1411: error: undefined reference to 'EC_KEY_set_public_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1416: error: undefined reference to 'EC_POINT_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1501: error: undefined reference to 'EVP_ecdsa'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:1547: error: undefined reference to 'EC_POINT_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2209: error: undefined reference to 'EC_KEY_get0_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2218: error: undefined reference to 'EC_KEY_new'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2224: error: undefined reference to 'EC_KEY_set_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2247: error: undefined reference to 'EC_KEY_generate_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2259: error: undefined reference to 'EC_GROUP_get_degree'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2264: error: undefined reference to 'ECDH_compute_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2289: error: undefined reference to 'EC_POINT_point2oct'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2304: error: undefined reference to 'EC_POINT_point2oct'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_clnt.c:2407: error: undefined reference to 'ECDSA_sign'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_lib.c:1865: error: undefined reference to 'EC_KEY_up_ref'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_lib.c:1871: error: undefined reference to 'EC_KEY_generate_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_lib.c:2132: error: undefined reference to 'EC_KEY_dup'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/s3_lib.c:2138: error: undefined reference to 'EC_KEY_generate_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/t1_lib.c:234: error: undefined reference to 'i2d_OCSP_RESPID'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/t1_lib.c:261: error: undefined reference to 'i2d_OCSP_RESPID'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/t1_lib.c:599: error: undefined reference to 'd2i_OCSP_RESPID'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/t1_lib.c:605: error: undefined reference to 'OCSP_RESPID_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/t1_lib.c:612: error: undefined reference to 'OCSP_RESPID_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/t1_lib.c:617: error: undefined reference to 'OCSP_RESPID_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/ssl_lib.c:547: error: undefined reference to 'OCSP_RESPID_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/ssl_lib.c:1003: error: undefined reference to 'dtls1_min_mtu'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/ssl_cert.c:241: error: undefined reference to 'EC_KEY_dup'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/ssl/ssl_algs.c:120: error: undefined reference to 'EVP_ecdsa'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:170: error: undefined reference to 'EC_GROUP_get_asn1_flag'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:171: error: undefined reference to 'EC_GROUP_get_curve_name'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:177: error: undefined reference to 'i2d_ECParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:186: error: undefined reference to 'i2d_ECParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:301: error: undefined reference to 'EC_KEY_new'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:307: error: undefined reference to 'd2i_ECParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:324: error: undefined reference to 'EC_GROUP_new_by_curve_name'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:329: error: undefined reference to 'EC_GROUP_set_asn1_flag'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:330: error: undefined reference to 'EC_KEY_set_group'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/x_pubkey.c:332: error: undefined reference to 'EC_GROUP_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/d2i_pu.c:114: error: undefined reference to 'o2i_ECPublicKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/d2i_pr.c:115: error: undefined reference to 'd2i_ECPrivateKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/i2d_pu.c:87: error: undefined reference to 'i2o_ECPublicKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/i2d_pr.c:88: error: undefined reference to 'i2d_ECPrivateKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:309: error: undefined reference to 'EC_GROUP_get_asn1_flag'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:316: error: undefined reference to 'EC_GROUP_get_curve_name'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:328: error: undefined reference to 'EC_GROUP_method_of'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:328: error: undefined reference to 'EC_METHOD_get_field_type'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:341: error: undefined reference to 'EC_GROUP_get_curve_GF2m'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:353: error: undefined reference to 'EC_GROUP_get0_generator'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:347: error: undefined reference to 'EC_GROUP_get_curve_GFp'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:357: error: undefined reference to 'EC_GROUP_get_order'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:358: error: undefined reference to 'EC_GROUP_get_cofactor'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:363: error: undefined reference to 'EC_GROUP_get_point_conversion_form'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:365: error: undefined reference to 'EC_POINT_point2bn'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:382: error: undefined reference to 'EC_GROUP_get0_seed'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:383: error: undefined reference to 'EC_GROUP_get_seed_len'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:401: error: undefined reference to 'EC_GROUP_get_basis_type'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:483: error: undefined reference to 'EC_KEY_get_conv_form'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:483: error: undefined reference to 'EC_POINT_point2bn'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:491: error: undefined reference to 'EC_KEY_get0_private_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:508: error: undefined reference to 'EC_GROUP_get_order'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/asn1/t_pkey.c:780: error: undefined reference to 'EC_GROUP_get_order'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/engine/eng_fat.c:83: error: undefined reference to 'ENGINE_set_default_ECDH'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/engine/eng_fat.c:149: error: undefined reference to 'ENGINE_register_ECDH'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/engine/eng_openssl.c:149: error: undefined reference to 'ECDH_OpenSSL'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/engine/eng_openssl.c:149: error: undefined reference to 'ENGINE_set_ECDH'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/engine/eng_openssl.c:152: error: undefined reference to 'ECDSA_OpenSSL'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/err/err_all.c:134: error: undefined reference to 'ERR_load_EC_strings'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/err/err_all.c:137: error: undefined reference to 'ERR_load_ECDSA_strings'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/err/err_all.c:140: error: undefined reference to 'ERR_load_ECDH_strings'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/err/err_all.c:152: error: undefined reference to 'ERR_load_OCSP_strings'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:102: error: undefined reference to 'EC_GROUP_get_order'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:130: error: undefined reference to 'ECDSA_size'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:195: error: undefined reference to 'EC_GROUP_dup'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:200: error: undefined reference to 'EC_GROUP_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:245: error: undefined reference to 'EC_GROUP_cmp'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:283: error: undefined reference to 'EC_POINT_cmp'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:389: error: undefined reference to 'EC_KEY_up_ref'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/p_lib.c:379: error: undefined reference to 'EC_KEY_up_ref'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/c_alld.c:92: error: undefined reference to 'EVP_ecdsa'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:248: error: undefined reference to 'd2i_ECParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:265: error: undefined reference to 'EC_GROUP_new_by_curve_name'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:270: error: undefined reference to 'EC_GROUP_set_asn1_flag'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:273: error: undefined reference to 'EC_GROUP_free'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:277: error: undefined reference to 'd2i_ECPrivateKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:292: error: undefined reference to 'EC_POINT_new'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:297: error: undefined reference to 'EC_GROUP_get0_generator'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:297: error: undefined reference to 'EC_POINT_copy'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:303: error: undefined reference to 'EC_POINT_mul'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:308: error: undefined reference to 'EC_KEY_set_public_key'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:636: error: undefined reference to 'EC_GROUP_get_asn1_flag'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:637: error: undefined reference to 'EC_GROUP_get_curve_name'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:643: error: undefined reference to 'i2d_ECParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:652: error: undefined reference to 'i2d_ECParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:674: error: undefined reference to 'EC_KEY_get_enc_flags'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:676: error: undefined reference to 'EC_KEY_set_enc_flags'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:677: error: undefined reference to 'i2d_ECPrivateKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:679: error: undefined reference to 'EC_KEY_set_enc_flags'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:685: error: undefined reference to 'EC_KEY_set_enc_flags'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:690: error: undefined reference to 'i2d_ECPrivateKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/evp/evp_pkey.c:691: error: undefined reference to 'EC_KEY_set_enc_flags'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/pem/pem_info.c:100: error: undefined reference to 'd2i_ECPrivateKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/pem/pem_all.c:341: error: undefined reference to 'd2i_ECPKParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/pem/pem_all.c:341: error: undefined reference to 'd2i_ECPKParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/pem/pem_all.c:341: error: undefined reference to 'i2d_ECPKParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/pem/pem_all.c:341: error: undefined reference to 'i2d_ECPKParameters'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/pem/pem_all.c:378: error: undefined reference to 'i2d_ECPrivateKey'\
+/Users/mac/project/trunk/ThClient/TricksterHeroes/android/../libs/openssl-android/crypto/x509/x_all.c:341: error: undefined reference to 'd2i_ECPrivateKey'\
+./obj/local/armeabi/libcrypto-static.a(v3_lib.o):v3_lib.c:standard_exts: error: undefined reference to 'v3_crl_invdate'\
+./obj/local/armeabi/libcrypto-static.a(v3_lib.o):v3_lib.c:standard_exts: error: undefined reference to 'v3_ocsp_nonce'\
+./obj/local/armeabi/libcrypto-static.a(v3_lib.o):v3_lib.c:standard_exts: error: undefined reference to 'v3_ocsp_crlid'\
+./obj/local/armeabi/libcrypto-static.a(v3_lib.o):v3_lib.c:standard_exts: error: undefined reference to 'v3_ocsp_nocheck'\
+./obj/local/armeabi/libcrypto-static.a(v3_lib.o):v3_lib.c:standard_exts: error: undefined reference to 'v3_ocsp_acutoff'\
+./obj/local/armeabi/libcrypto-static.a(v3_lib.o):v3_lib.c:standard_exts: error: undefined reference to 'v3_ocsp_serviceloc'\
+./obj/local/armeabi/libcrypto-static.a(v3_lib.o):v3_lib.c:standard_exts: error: undefined reference to 'v3_crl_hold'
+\f1 \
+\
+\
+\
+\
+\
+\
+\
+}
