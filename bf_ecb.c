@@ -1,4 +1,4 @@
-/* crypto/bf/bf_ecb.c */ff
+/* crypto/bf/bf_ecb.c */ffㄹㄹ
 /* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
  * All rights reserved.
  *
