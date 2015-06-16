@@ -23,7 +23,7 @@ inline
 void GetTSC(unsigned long& tsc)
 {
   unsigned long a;
-  __asm _emit 0fh
+  __asm _emit 0fhㅇㄹㅎ
   __asm _emit 31h
   __asm mov a, eax;
   tsc=a;
