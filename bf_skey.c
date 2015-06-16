@@ -20,7 +20,7 @@
  * This can be in the form of a textual message at program startup or
  * in documentation (online or textual) provided with the package.
  *
- * Redistribution and use in source and binary forms, with or without
+ * Redistribution and use in source and binary ㄴㅇㄹforms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
  * 1. Redistributions of source code must retain the copyright
