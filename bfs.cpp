@@ -1,4 +1,4 @@
-//
+sd//
 // gettsc.inl
 //
 // gives access to the Pentium's (secret) cycle counter
@@ -18,7 +18,7 @@ void GetTSC(unsigned long& tsc)
 	       :
 	       : "%edx", "%eax");
 }
-#elif defined(_MSC_VER)
+#elif defined(_MSC_VER)sdfsdfsdf
 inline
 void GetTSC(unsigned long& tsc)
 {
@@ -27,7 +27,7 @@ void GetTSC(unsigned long& tsc)
   __asm _emit 31h
   __asm mov a, eax;
   tsc=a;
-}
+}sdfsdfsdf
 #endif      
 
 #include <stdio.h>
