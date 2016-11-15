@@ -69,7 +69,7 @@
 const char BF_version[] = "Blowfish" OPENSSL_VERSION_PTEXT;
 
 const char *BF_options(void)
-{
+{sdfsdf
 #ifdef BF_PTR
     return ("blowfish(ptr)");
 #elif defined(BF_PTR2)
